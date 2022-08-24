@@ -110,4 +110,47 @@ class <strong> NomClass() = default </strong><br></p>
     Exemple(// args );
 };
 </code></pre>
+<h2 id="notion">Notion :</h2>
+<blockquote>
+<p>Un constructeur de copie permet d'initialiser une instance en copiant les
+attributs d'une autre instance du meme type <br></p>
+</blockquote>
+<h3 id="syntaxe">Syntaxe:</h3>
+<pre><code class="language-cpp">NomClass(NomClass const&amp; autre);
+</code></pre>
+<blockquote>
+<p>Un constructeur de copie est automatiquement généré par le compilateur
+s 'il n'est pas explicitement defini (<strong> Constructeur de copie par
+defaut</strong>), Ce constructeur opére une initialisation <strong> membre à
+membre </strong> des attributs  (si l'attribut est un objet le constructeur
+de cet objet est invoqué ) <strong> Copie de surface </strong> .
+Si on souhaite interdire la copie , il suffit de <strong> supprimer </strong>
+le constructeur de copie par defaut avec la command <strong> = delete </strong>
+.<br></p>
+<h3 id="syntaxe">Syntaxe:</h3>
+<pre><code class="language-cpp">NomClass(NomClass const&amp; autre) = delete;
+</code></pre>
+</blockquote>`
+<h2 id="notion">Notion :</h2>
+<blockquote>
+<p>Si l'initialisation des attributs d'une instance implique la mobilistaion de
+ressources :<br>
+1. fichier<br>
+2. périphérique<br>
+3. portion de mémoire (pointeurs)<br>
+il est alors important de <strong> libérer ces ressources </strong> aprés l'usage
+,C++ offre une méthode appelée <strong> destructeur </strong>  invoqué
+automatiquement en fin de vie de l'instance .</p>
+</blockquote>
+<h3 id="syntaxe">Syntaxe :</h3>
+<pre><code class="language-cpp">~NomClass();
+</code></pre>
+<blockquote>
+<p>Le destructeur d'une class est une méthode sans paramétres<br>
+😉 <strong>Pas du surcharge possible </strong><br>
+Son nom est celui de la class<br>
+Si le destructeur n'est pas défini explicitement par le programeur ,
+le compilateur en génére automatiquement une version minimale<br></p>
+</blockquote>
+
 <hr />
