@@ -1,4 +1,4 @@
-<h1 id="seamine-4">Semiane 4:</h1>
+<h1 id="seamine-4">Semaine 4:</h1>
 <h2 id="notion">Notion :</h2>
 <blockquote>
 <p>L heritage représente la relation <strong> est un </strong> , il permet de créer
