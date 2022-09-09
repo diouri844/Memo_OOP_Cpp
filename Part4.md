@@ -66,3 +66,26 @@ premier temps:<br>
 1. <em>Toujours déclarer au mois un constructeur</em> <br>
 2. <em>Toujours faire l'appel à un constructeur de super-classe</em><br></p>
 </blockquote>
+<h2 id="notion-3">Notion :</h2>
+<blockquote>
+<p>les constructeurs ne sont , en général pas  hérités mais en <strong>c++11</strong>
+on peut <em>demander leur héritage</em>  en utilisant le mot clé <strong>using</strong>
+<br> On récupère alors tous les constructeurs de la super-classe<br>
+⚠️ Les constructeurs n'initialisent pas les attributes spécifique de la sous
+classe , c est donc trés risqué  .<br></p>
+</blockquote>
+<h2 id="syntaxe-2">Syntaxe :</h2>
+<pre><code class="language-cpp">class Mere{
+    public:
+        Mere();
+        Mere(int , int);
+};
+class File : public Mere{
+    using Mere::Mere;
+    /*
+    existance alore de :
+    File();
+    File(int , int )
+    */
+};
+</code></pre>
